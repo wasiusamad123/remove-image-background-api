@@ -22,7 +22,6 @@ if (isset($_POST['submit'])) {
     curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
     $headers = array();
     // Read API key from a configuration file or environment variable
-// $headers[] = 'X-Api-Key: mApbHYw8kAKALCiHyBBLgFj3'; my api
     $headers[] = 'X-Api-Key: ' . getenv('X-Api-Key: y8mHvDEbBwShVSdGMSvrT4Tg');
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
     $result = curl_exec($ch);
